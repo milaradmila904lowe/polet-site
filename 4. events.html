@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия - ПОЛЁТ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили только для этой страницы */
+        .events-page-header {
+            padding: 40px 40px 20px;
+            background: #eee;
+        }
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: #fff; padding: 8px 20px; border-radius: 20px; border: 1px solid #ddd; cursor: pointer;
+        }
+        .filter-btn.active { background: #222; color: #fff; border-color: #222; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-area">
+            <div class="logo-icon">☯</div>
+            <span class="logo-text">ПОЛЁТ</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="events.html" class="active">Мероприятия и события</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="btn-primary">Заказать билет</button>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main>
+        <div class="events-page-header">
+            <h1>Фестивали и события</h1>
+            <p>Все мероприятия 2026 года</p>
+            <div class="filter-bar">
+                <button class="filter-btn active">Все события</button>
+                <button class="filter-btn">Музеи</button>
+                <button class="filter-btn">Кино</button>
+                <button class="filter-btn">Театр</button>
+                <button class="filter-btn">Выставки</button>
+            </div>
+        </div>
+
+        <section class="upcoming-events">
+            <div class="events-grid">
+                <!-- Повторяем карточки, их может быть много -->
+                <div class="event-card">
+                    <div class="event-img"></div>
+                    <div class="event-info">
+                        <span class="date">15-16 июня</span>
+                        <h3>Кинофестиваль</h3>
+                        <p>Короткометражные фильмы о полете и свободе</p>
+                        <a href="#" class="btn-small">Подробнее →</a>
+                    </div>
+                </div>
+                <!-- Добавьте остальные карточки сюда -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

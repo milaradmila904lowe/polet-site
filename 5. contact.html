@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - ПОЛЁТ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-area">
+            <div class="logo-icon">☯</div>
+            <span class="logo-text">ПОЛЁТ</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="events.html">Мероприятия и события</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="btn-primary">Заказать билет</button>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main class="contact-page">
+        <div style="display: flex; flex-wrap: wrap; padding: 40px; gap: 40px; background: #f4f4f2; min-height: 80vh;">
+            
+            <!-- Левая часть: Информация -->
+            <div style="flex: 1; min-width: 300px;">
+                <h1>Свяжитесь<br>с нами</h1>
+                <p style="margin: 20px 0; color: #555;">Остались вопросы?<br>Мы всегда рады помочь вам<br>в выборе лучшего мероприятия.</p>
+                <div style="margin-top: 40px; line-height: 1.8;">
+                    <p>✉ info@polet.ru</p>
+                    <p>📞 8 (800) 555-55-55</p>
+                    <p>📍 г. Москва, ул. Искусств, д. 1</p>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 15px;">
+                    <span>📷</span> <span>📘</span> <span>▶</span> <!-- Иконки соцсетей -->
+                </div>
+            </div>
+
+            <!-- Правая часть: Форма -->
+            <div style="flex: 1; min-width: 300px; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <form>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px;">Ваше имя</label>
+                        <input type="text" style="width: 100%; padding: 12px; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px;">E-mail</label>
+                        <input type="email" style="width: 100%; padding: 12px; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 5px;">Сообщение</label>
+                        <textarea style="width: 100%; height: 100px; padding: 12px; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 15px;">Отправить сообщение</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
